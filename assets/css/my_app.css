@@ -1,0 +1,25 @@
+/* custom */
+
+.top_nav__list{
+	display: flex;
+    justify-content: center;
+
+}
+
+.top_nav__item{
+    list-style: none;
+}
+
+.top_nav__item:not(:last-child){
+    margin-right: 5px;
+}
+.top_nav__item{
+    color: white;
+    padding:3px 6px 3px 6px;
+    cursor:pointer;
+    transition:color .2s ease-in-out;
+}
+
+.top_nav__item-link:hover{
+    color: red;
+}
