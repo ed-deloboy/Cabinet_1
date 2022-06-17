@@ -1,25 +1,63 @@
 /* custom */
 
-.top_nav__list{
-	display: flex;
+/*  */
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+/*  */
+a {
+    cursor: pointer;
+}
+
+.top_nav__list {
+    display: flex;
     justify-content: center;
 
 }
 
-.top_nav__item{
+.top_nav__item {
     list-style: none;
 }
 
-.top_nav__item:not(:last-child){
+.top_nav__item:not(:last-child) {
     margin-right: 5px;
 }
-.top_nav__item{
+
+.top_nav__item {
     color: white;
-    padding:3px 6px 3px 6px;
-    cursor:pointer;
-    transition:color .2s ease-in-out;
+    padding: 3px 6px 3px 6px;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
 }
 
-.top_nav__item-link:hover{
+.top_nav__item-link:hover {
     color: red;
+}
+
+.menu_font_size {
+    font-size: calc(var(--index) * .7);
+}
+
+.full-search-bar {
+    height: auto;
+}
+
+.nav-pills {
+    padding-top: calc(var(--index) * 1.8);
+    padding-bottom: calc(var(--index) * 1.4);
+}
+
+.nav_left_active {
+    background-color: #a3a3a34f;
+}
+
+.parent-icon {
+    margin-right: calc(var(--index) * .8) !important;
+}
+
+@media (max-width: 1024px) {
+    .menu_font_size {
+        font-size: calc(var(--index) * 1);
+    }
 }

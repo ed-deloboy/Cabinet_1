@@ -50,11 +50,11 @@
 			</div>
 
 			<!--navigation left-->
-			<ul class="metismenu" id="menu">
+			<ul class="metismenu" id="menu_left">
 
 				<!-- item start -->
 				<li>
-					<a id="general_page">
+					<a id="general_page" class="nav_left_link">
 						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
 						</div>
 						<div class="menu-title">Главная</div>
@@ -64,7 +64,7 @@
 
 				<!-- item start -->
 				<li>
-					<a id="general_page">
+					<a id="next_page" class="nav_left_link nav_left_active">
 						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
 						</div>
 						<div class="menu-title">Другая</div>
@@ -397,7 +397,22 @@
 					<div class="search-bar flex-grow-1">
 						<!-- верхнее меню здесь в див -->
 
-						<ul class="top_nav__list">
+						<ul class="nav nav-pills" id="menu_top">
+							<li class="nav-item">
+								<a id="nav_general" href="#" class="nav-link menu_font_size active">Главная</a>
+							</li>
+							<li class="nav-item">
+								<a id="nav_vebinars" href="#" class="nav-link menu_font_size">Вебинары</a>
+							</li>
+							<li class="nav-item">
+								<a id="nav_about" href="#" class="nav-link menu_font_size">О нас</a>
+							</li>
+							<li class="nav-item">
+								<a id="nav_marketing" href="#" class="nav-link menu_font_size">Маркетинг</a>
+							</li>
+						</ul>
+						<span class="position-absolute top-50 search-close translate-middle-y"><i class="bx bx-x"></i></span>
+						<!-- <ul class="top_nav__list">
 							<li class="top_nav__item">
 								<a class="top_nav__item-link">Вебинары</a>
 							</li>
@@ -407,16 +422,16 @@
 							<li class="top_nav__item">
 								<a class="top_nav__item-link">Маркетинг</a>
 							</li>
-						</ul>
+						</ul> -->
 
 					</div>
 					<div class="top-menu ms-auto">
 						<ul class="navbar-nav align-items-center">
 							<li class="nav-item mobile-search-icon">
-								<a class="nav-link" href="#"> <i class='bx bx-search'></i>
+								<a class="nav-link" href="#"> <i class="fadeIn animated bx bx-menu-alt-right"></i>
 								</a>
 							</li>
-							<li class="nav-item dropdown dropdown-large">
+							<!-- <li class="nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
@@ -453,7 +468,7 @@
 										</div>
 									</div>
 								</div>
-							</li>
+							</li> -->
 							<li class="nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret
 										position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
