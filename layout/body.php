@@ -1,8 +1,13 @@
 <!--start page wrapper -->
 <div class="page-wrapper">
 	<!-- body container -->
+	<div class="card-body card-body__loader d-flex justify-content-center align-items-center d-none">
+			<div class="spinner-border text-warning" role="status"> <span class="visually-hidden">загрузка...</span>
+			</div>
+		</div>
+
 	<div class="page-content">
-		<h2>Hello world</h2>
+		
 	</div>
 </div>
 <!--end page wrapper -->

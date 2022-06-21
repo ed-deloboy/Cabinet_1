@@ -30,10 +30,15 @@
 	<!-- <link rel="stylesheet" href="assets/css/header-colors.css" /> -->
 	<link rel="stylesheet" href="assets/css/my_app.css">
 
+	<!-- jQ -->
+	<script defer src="assets/js/my_app.js"></script>
+
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 	<title>Проект</title>
 </head>
 
-<body class="bg-theme bg-theme1">
+<body class="bg-theme bg-theme2">
 	<!--wrapper-->
 	<div class="wrapper">
 		<!--sidebar wrapper -->
@@ -54,20 +59,30 @@
 
 				<!-- item start -->
 				<li>
-					<a id="general_page" class="nav_left_link">
+					<a id="partner_page" class="nav_left_link">
 						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
 						</div>
-						<div class="menu-title">Главная</div>
+						<div class="menu-title">Партнёры</div>
 					</a>
 				</li>
 				<!-- item stop -->
 
 				<!-- item start -->
 				<li>
-					<a id="next_page" class="nav_left_link nav_left_active">
+					<a id="business_page" class="nav_left_link">
 						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
 						</div>
-						<div class="menu-title">Другая</div>
+						<div class="menu-title">Бизнес</div>
+					</a>
+				</li>
+				<!-- item stop -->
+
+				<!-- item start -->
+				<li>
+					<a id="faq_page" class="nav_left_link">
+						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
+						</div>
+						<div class="menu-title">FAQ</div>
 					</a>
 				</li>
 				<!-- item stop -->
@@ -412,17 +427,6 @@
 							</li>
 						</ul>
 						<span class="position-absolute top-50 search-close translate-middle-y"><i class="bx bx-x"></i></span>
-						<!-- <ul class="top_nav__list">
-							<li class="top_nav__item">
-								<a class="top_nav__item-link">Вебинары</a>
-							</li>
-							<li class="top_nav__item">
-								<a class="top_nav__item-link">О нас</a>
-							</li>
-							<li class="top_nav__item">
-								<a class="top_nav__item-link">Маркетинг</a>
-							</li>
-						</ul> -->
 
 					</div>
 					<div class="top-menu ms-auto">
@@ -431,7 +435,7 @@
 								<a class="nav-link" href="#"> <i class="fadeIn animated bx bx-menu-alt-right"></i>
 								</a>
 							</li>
-							<!-- <li class="nav-item dropdown dropdown-large">
+							<li class="d-none nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
 								</a>
 								<div class="dropdown-menu dropdown-menu-end">
@@ -468,8 +472,8 @@
 										</div>
 									</div>
 								</div>
-							</li> -->
-							<li class="nav-item dropdown dropdown-large">
+							</li>
+							<li class="d-none nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret
 										position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
 									<i class='bx bx-bell'></i>
@@ -594,7 +598,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="nav-item dropdown dropdown-large">
+							<li class="d-none nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret
 										position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
 									<i class='bx bx-comment'></i>
@@ -768,23 +772,27 @@
 							</div>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
-							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx
-											bx-home-circle'></i><span>Dashboard</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx
-											bx-dollar-circle'></i><span>Earnings</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx
-											bx-download'></i><span>Downloads</span></a>
+							<li>
+								<a id="profile_page" class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Профиль</span>
+								</a>
 							</li>
 							<li>
+								<a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Настройки</span>
+								</a>
+							</li>
+							<li class="d-none"><a class="dropdown-item" href="javascript:;"><i class='bx
+											bx-home-circle'></i><span>Dashboard</span></a>
+							</li>
+							<li class="d-none"><a class="dropdown-item" href="javascript:;"><i class='bx
+											bx-dollar-circle'></i><span>Earnings</span></a>
+							</li>
+							<li class="d-none"><a class="dropdown-item" href="javascript:;"><i class='bx
+											bx-download'></i><span>Downloads</span></a>
+							</li>
+							<li class="d-none">
 								<div class="dropdown-divider mb-0"></div>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx
+							<li class="d-none"><a class="dropdown-item" href="javascript:;"><i class='bx
 											bx-log-out-circle'></i><span>Logout</span></a>
 							</li>
 						</ul>

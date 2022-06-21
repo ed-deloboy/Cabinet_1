@@ -172,7 +172,7 @@ a {
 
 .page-wrapper {
 
-	height: 100%;
+	min-height: 100%;
 
 	margin-top: 60px;
 
@@ -192,9 +192,10 @@ a {
 
 	background: rgb(255 255 255 / 12%);
 
-	position: absolute;
+	position: fixed;
 
 	left: 250px;
+	bottom: 0;
 
 	right: 0;
 
