@@ -1,30 +1,6 @@
+
 <section class="profile-page row">
     <div class="container">
-        <!-- хлебные крошки -->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">User Profile</div>
-            <div class="ps-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">User Profilep</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="ms-auto">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-light">Settings</button>
-                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"> <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end" style=""> <a class="dropdown-item" href="javascript:;">Action</a>
-                        <a class="dropdown-item" href="javascript:;">Another action</a>
-                        <a class="dropdown-item" href="javascript:;">Something else here</a>
-                        <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="main-body">
             <div class="row">
@@ -34,7 +10,7 @@
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
                                 <img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
-                              
+
                                 <div class="mt-3">
                                     <h4>Эд Бондаренко</h4>
                                     <p class="mb-1">Full Stack Developer</p>
@@ -155,21 +131,13 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Mobile</h6>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="(320) 380-4539">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-sm-3">
                                     <h6 class="mb-0">Address</h6>
                                 </div>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control" value="Bay Area, San Francisco, CA">
                                 </div>
                             </div>
-                             <div class="row mb-3">
+                            <div class="row mb-3">
                                 <div class="col-sm-3">
                                     <h6 class="mb-0">Аватар</h6>
                                 </div>
@@ -180,7 +148,7 @@
                             <div class="row">
                                 <div class="col-sm-3"></div>
                                 <div class="col-sm-9">
-                                    <input type="button" class="btn btn-light px-4" value="Обновить">
+                                    <button id="profile_update_btn" type="button" class="btn btn-light px-4">Обновить</button>
                                 </div>
                             </div>
                         </div>
@@ -189,4 +157,5 @@
             </div>
         </div>
     </div>
+
 </section>

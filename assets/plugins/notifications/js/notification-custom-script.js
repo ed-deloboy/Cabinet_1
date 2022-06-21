@@ -99,7 +99,7 @@ function round_error_noti() {
 	});
 }
 
-function round_success_noti() {
+function round_success_noti(massage) {
 	Lobibox.notify('success', {
 		pauseDelayOnHover: true,
 		size: 'mini',
@@ -108,7 +108,7 @@ function round_success_noti() {
 		delayIndicator: false,
 		continueDelayOnInactiveTab: false,
 		position: 'top right',
-		msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
+		msg: massage
 	});
 }
 /* Notifications With Images*/

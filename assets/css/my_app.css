@@ -43,10 +43,6 @@ a {
     height: auto;
 }
 
-.nav-pills {
-    padding-top: calc(var(--index) * 1.8);
-    padding-bottom: calc(var(--index) * 1.4);
-}
 
 .nav_left_active {
     background-color: #ffffff47;
@@ -58,6 +54,12 @@ a {
 
 .card-body__loader{
     min-height: 70vh;
+}
+
+@media (max-width: 3980px) {
+    .menu_font_size {
+        font-size: calc(var(--index) * .5);
+    }
 }
 
 @media (max-width: 1024px) {

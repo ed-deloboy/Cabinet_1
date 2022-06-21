@@ -1,5 +1,7 @@
 // custom functions
 
+
+
 // top menu
 let top_nav_list = document.getElementById("menu_top");
 let top_nav_link = top_nav_list.querySelectorAll("a");
@@ -22,6 +24,19 @@ let faq_btn_left = document.getElementById("faq_page");
 // profle 
 let rofile_btn = document.getElementById("profile_page");
 
+let partnerLink__link = document.getElementById('partnerLink__link');
+let partnerLink__text = document.getElementById('partnerLink__text').textContent;
+let copyBtn = document.getElementById("linkCopyBtn");
+
+
+// notification func
+
+copyBtn.addEventListener('click', e => {
+  round_success_noti('Партнёрская ссылка скопирована');
+  partnerLink__link.value = partnerLink__text;
+  partnerLink__link.select();
+  document.execCommand("copy");
+})
 
 top_nav_link.forEach((e) => {
   e.addEventListener("click", (e) => {
@@ -29,7 +44,6 @@ top_nav_link.forEach((e) => {
       element.classList.remove("active");
     });
     e.target.classList.add("active");
-    // console.log(e.target);
   });
 });
 
@@ -61,8 +75,6 @@ left_nav_link.forEach((b) => {
     });
 
     if (e.srcElement.classList[0] == "menu-title") {
-      // console.log('тАЙтл');
-      // e.target.classList.remove('nav_left_active');
       e.path[1].classList.add("nav_left_active");
       console.log(e.path[1].classList);
     } else {
@@ -71,21 +83,17 @@ left_nav_link.forEach((b) => {
   });
 });
 
-//
 
 // Главная страница, загрузка
-// document.addEventListener("load", (e) => {
 
 $.ajax({
   type: "GET",
   url: "pages/general.php",
   dataType: "html",
   success: function (response) {
-    console.log(response);
     body_container.innerHTML = response;
   },
 });
-//   });
 
 // Прослушка главной страницы по нажатию
 general_btn_top.addEventListener("click", (e) => {
@@ -105,48 +113,48 @@ general_btn_top.addEventListener("click", (e) => {
 
 // прослушка вебинар
 vebinar_btn_top.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/vebinars.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
 
 // прослушка о нас
 about_btn_top.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/about.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
 
 // прослушка маркетинг
 marketing_btn_top.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/marketing.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
@@ -154,16 +162,16 @@ marketing_btn_top.addEventListener("click", (e) => {
 
 // прослушка партнёры
 partner_btn_left.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/partners.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
@@ -171,50 +179,59 @@ partner_btn_left.addEventListener("click", (e) => {
 
 // прослушка бизнес
 business_btn_left.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/business.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
 
 // прослушка бизнес
 faq_btn_left.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/faq.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
     },
   });
 });
 
 
-
 // прослушка профайл
 rofile_btn.addEventListener("click", (e) => {
-    body_container.classList.add("d-none");
-    loader.classList.remove("d-none");
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
   $.ajax({
     type: "GET",
     url: "pages/profile.php",
     dataType: "html",
     success: function (response) {
-        loader.classList.add("d-none");
-        body_container.classList.remove("d-none");
-        body_container.innerHTML = response;
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
+
+      let prof_update_btn = document.getElementById('profile_update_btn');
+      prof_update_btn.addEventListener('click', e => {
+        round_success_noti('Ваш профиль обновлен');
+
+      })
     },
   });
 });
+
+
+
+
