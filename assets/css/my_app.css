@@ -56,9 +56,21 @@ a {
     min-height: 70vh;
 }
 
+.carousel-item{
+    height: 300px;
+}
+.carousel-item img{
+    filter: brightness(0.8);
+    object-fit: cover;
+    height: 100%;
+}
+.carousel-caption{
+    bottom: 2.25rem !important;
+}
+
 @media (max-width: 3980px) {
     .menu_font_size {
-        font-size: calc(var(--index) * .5);
+        font-size: calc(var(--index) * .7);
     }
 }
 

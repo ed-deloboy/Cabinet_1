@@ -27,6 +27,7 @@ let rofile_btn = document.getElementById("profile_page");
 let partnerLink__link = document.getElementById('partnerLink__link');
 let partnerLink__text = document.getElementById('partnerLink__text').textContent;
 let copyBtn = document.getElementById("linkCopyBtn");
+let editPasswordForm = document.getElementById('editPasswordForm');
 
 
 // notification func
@@ -234,4 +235,46 @@ rofile_btn.addEventListener("click", (e) => {
 
 
 
+// edit password 
+editPasswordForm.addEventListener('submit', e => {
+  e.preventDefault();
+let data = $('#editPasswordForm').serializeArray();
+// console.log(data);
 
+$.ajax({
+  type: "POST",
+  url: "config/edit_password.php",
+  data: data,
+  success: function (response) {
+    console.log(response);
+    if(response == 234){
+      round_warning_noti('Все поля пустые')
+    }
+
+    if(response == 34){
+      round_warning_noti('Поля ввода нового пароля пустые')
+    }
+
+    if(response == 1){
+      round_warning_noti('Новые пароли не совпадают, попробуйте еще раз')
+    }
+
+    if(response == 2){
+      round_warning_noti('Поле старого пароля пустое')
+    }
+
+    if(response == 3){
+      round_warning_noti('Поле нового пароля пустое')
+    }
+
+    if(response == 4){
+      round_warning_noti('Поле ввода повторного нового пароля пустое')
+    }
+    if(response == 7){
+      round_success_noti('Запрос на изменение пароля подтвержден, проверьте EMAIL')
+    }
+  } 
+});
+
+
+})

@@ -1,4 +1,3 @@
-
 <section class="profile-page row">
     <div class="container">
 
@@ -9,12 +8,12 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+                                <img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" alt="Admin" class="rounded-circle p-1 bg-primary" width="110" height="110" style="object-fit: cover;">
 
                                 <div class="mt-3">
                                     <h4>Эд Бондаренко</h4>
-                                    <p class="mb-1">Full Stack Developer</p>
-                                    <p class="font-size-sm">Bay Area, San Francisco, CA</p>
+                                    <p class="mb-1">Gold</p>
+                                    <!-- <p class="font-size-sm">Bay Area, San Francisco, CA</p> -->
                                     <!-- <button class="btn btn-light">Follow</button>
                                     <button class="btn btn-light">Message</button> -->
                                 </div>
@@ -23,12 +22,26 @@
                             <h4>Данные</h4>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe me-2 icon-inline">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                        </svg>Спонсор</h6>
+                                    <p class="mb-0 list-inline-item">
+                                    <i class="fadeIn animated bx bx-search"></i>
+                                        Спонсор
+                                    </p>
                                     <span class="text-white">admin@admin.ru</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="mb-0 list-inline-item">
+                                    <i class="fadeIn animated bx bx-mail-send"></i>
+                                        Email
+                                    </p>
+                                    <span class="text-white">bondarenko@mail.ru</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                    <p class="mb-0 list-inline-item">
+                                    <i class="fadeIn animated bx bx-wallet-alt"></i>
+                                        Пароль
+                                    </p>
+                                    <!-- <span class="text-white">bondarenko@mail.ru</span> -->
+                                    <button type="button" class="btn btn-light px-5 radius-30 p-0 ps-3 pe-3" data-bs-toggle="modal" data-bs-target="#editPassword"><small>Изменить</small></button>
                                 </li>
                                 <!-- <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github me-2 icon-inline">
@@ -107,39 +120,39 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Full Name</h6>
+                                    <p class="mb-0">Login</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="Эд Бондаренко">
+                                    <input type="text" class="form-control" value="bondarenko">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Email</h6>
+                                    <p class="mb-0">Фамилия</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="john@example.com">
+                                    <input type="text" class="form-control" value="Бондаренко">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Phone</h6>
+                                    <p class="mb-0">Имя</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="(239) 816-9029">
+                                    <input type="text" class="form-control" value="Эд">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Address</h6>
+                                    <p class="mb-0">Телефон</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="Bay Area, San Francisco, CA">
+                                    <input type="text" class="form-control" value="+7(989)488-42-15">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Аватар</h6>
+                                    <p class="mb-0">Аватар</p>
                                 </div>
                                 <div class="col-sm-9">
                                     <input type="file" class="form-control" value="Bay Area, San Francisco, CA">
@@ -148,7 +161,9 @@
                             <div class="row">
                                 <div class="col-sm-3"></div>
                                 <div class="col-sm-9">
-                                    <button id="profile_update_btn" type="button" class="btn btn-light px-4">Обновить</button>
+                                    <!-- <button id="profile_update_btn" type="button" class="btn btn-light px-4">Обновить</button> -->
+                                    <button id="profile_update_btn" type="button" class="btn btn-light px-5 radius-30">
+                                        <i class="fadeIn animated bx bx-loader"></i>Обновить</button>
                                 </div>
                             </div>
                         </div>

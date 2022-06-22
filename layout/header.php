@@ -456,10 +456,10 @@
 					<div class="user-box dropdown">
 						<a class="d-flex align-items-center nav-link dropdown-toggle
 								dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="https://via.placeholder.com/110x110" class="user-img" alt="user avatar">
+							<img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" class="user-img" alt="user avatar" style="object-fit:cover;">
 							<div class="user-info ps-3">
-								<p class="user-name mb-0">Pauline Seitz</p>
-								<p class="designattion mb-0">Web Designer</p>
+								<p class="user-name mb-0">Бондаренко Эд</p>
+								<p class="designattion mb-0">Gold</p>
 							</div>
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
