@@ -38,6 +38,100 @@
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<title>Проект</title>
+
+	<style>
+		/* custom */
+
+		/*  */
+		:root {
+			--index: calc(1vw + 1vh);
+		}
+
+		/*  */
+		a {
+			cursor: pointer;
+		}
+
+		.top_nav__list {
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.top_nav__item {
+			list-style: none;
+		}
+
+		.top_nav__item:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		.top_nav__item {
+			color: white;
+			padding: 3px 6px 3px 6px;
+			cursor: pointer;
+			transition: color .2s ease-in-out;
+		}
+
+		.top_nav__item-link:hover {
+			color: red;
+		}
+
+		.menu_font_size {
+			font-size: calc(var(--index) * .7);
+		}
+
+		.full-search-bar {
+			height: auto;
+		}
+
+
+		.nav_left_active {
+			background-color: #ffffff47;
+		}
+
+		.parent-icon {
+			margin-right: calc(var(--index) * .8) !important;
+		}
+
+		.card-body__loader {
+			min-height: 70vh;
+		}
+
+		.carousel-inner {
+			height: 300px !important;
+		}
+
+		.carousel-item {
+			height: 100%;
+		}
+
+		.carousel-item img {
+			filter: brightness(0.8);
+			object-fit: cover;
+			height: 100%;
+		}
+
+		.carousel-caption {
+			bottom: 2.25rem !important;
+		}
+
+		.about-icon-size {
+			font-size: calc(var(--index) * 1.9);
+		}
+
+		@media (max-width: 3980px) {
+			.menu_font_size {
+				font-size: calc(var(--index) * .7);
+			}
+		}
+
+		@media (max-width: 1024px) {
+			.menu_font_size {
+				font-size: calc(var(--index) * 1);
+			}
+		}
+	</style>
 </head>
 
 <body class="bg-theme bg-theme2">
@@ -58,6 +152,15 @@
 
 			<!--navigation left-->
 			<ul class="metismenu" id="menu_left">
+
+				<li>
+					<a id="finance_page" class="nav_left_link">
+						<div class="parent-icon">
+							<i class="fadeIn animated bx bx-dollar-circle"></i>
+						</div>
+						<div class="menu-title">Финансы</div>
+					</a>
+				</li>
 
 				<!-- item start -->
 				<li>
@@ -115,7 +218,7 @@
 							<li class="nav-item">
 								<a id="nav_about" href="#" class="nav-link menu_font_size"><i class="bx bx-user me-1"></i>О нас</a>
 							</li>
-							
+
 						</ul>
 						<span class="position-absolute top-50 search-close translate-middle-y"><i class="bx bx-x"></i></span>
 

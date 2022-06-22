@@ -53,7 +53,7 @@
                                         Пароль
                                     </p>
                                     <!-- <span class="text-white">bondarenko@mail.ru</span> -->
-                                    <button type="button" class="btn btn-light px-5 radius-30 p-0 ps-3 pe-3" data-bs-toggle="modal" data-bs-target="#editPassword"><small>Изменить</small></button>
+                                    <button type="submit" class="btn btn-light px-5 radius-30 p-0 ps-3 pe-3" data-bs-toggle="modal" data-bs-target="#editPassword"><small>Изменить</small></button>
                                 </li>
                             </ul>
                         </div>

@@ -17,6 +17,8 @@ let about_btn_top = document.getElementById("nav_about");
 let marketing_btn_top = document.getElementById("nav_marketing");
 
 // left menu btn
+
+let finance_btn_top = document.getElementById("finance_page");
 let partner_btn_left = document.getElementById("partner_page");
 let business_btn_left = document.getElementById("business_page");
 let faq_btn_left = document.getElementById("faq_page");
@@ -144,6 +146,22 @@ about_btn_top.addEventListener("click", (e) => {
   });
 });
 
+// прослушка финансы
+finance_btn_top.addEventListener("click", (e) => {
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
+  $.ajax({
+    type: "GET",
+    url: "pages/finance.php",
+    dataType: "html",
+    success: function (response) {
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
+    },
+  });
+});
+
 // прослушка маркетинг
 marketing_btn_top.addEventListener("click", (e) => {
   body_container.classList.add("d-none");
@@ -238,43 +256,43 @@ rofile_btn.addEventListener("click", (e) => {
 // edit password 
 editPasswordForm.addEventListener('submit', e => {
   e.preventDefault();
-let data = $('#editPasswordForm').serializeArray();
-// console.log(data);
+  let data = $('#editPasswordForm').serializeArray();
+  console.log(data);
 
-$.ajax({
-  type: "POST",
-  url: "config/edit_password.php",
-  data: data,
-  success: function (response) {
-    console.log(response);
-    if(response == 234){
-      round_warning_noti('Все поля пустые')
-    }
+  $.ajax({
+    type: "POST",
+    url: "config/edit_password.php",
+    data: data,
+    success: function (response) {
+      console.log(response);
+      if (response == 234) {
+        round_warning_noti('Все поля пустые')
+      }
 
-    if(response == 34){
-      round_warning_noti('Поля ввода нового пароля пустые')
-    }
+      if (response == 34) {
+        round_warning_noti('Поля ввода нового пароля пустые')
+      }
 
-    if(response == 1){
-      round_warning_noti('Новые пароли не совпадают, попробуйте еще раз')
-    }
+      if (response == 1) {
+        round_warning_noti('Новые пароли не совпадают, попробуйте еще раз')
+      }
 
-    if(response == 2){
-      round_warning_noti('Поле старого пароля пустое')
-    }
+      if (response == 2) {
+        round_warning_noti('Поле старого пароля пустое')
+      }
 
-    if(response == 3){
-      round_warning_noti('Поле нового пароля пустое')
-    }
+      if (response == 3) {
+        round_warning_noti('Поле нового пароля пустое')
+      }
 
-    if(response == 4){
-      round_warning_noti('Поле ввода повторного нового пароля пустое')
+      if (response == 4) {
+        round_warning_noti('Поле ввода повторного нового пароля пустое')
+      }
+      if (response == 7) {
+        round_success_noti('Запрос на изменение пароля подтвержден, проверьте EMAIL')
+      }
     }
-    if(response == 7){
-      round_success_noti('Запрос на изменение пароля подтвержден, проверьте EMAIL')
-    }
-  } 
-});
+  });
 
 
 })
