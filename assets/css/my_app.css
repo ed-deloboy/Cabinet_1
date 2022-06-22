@@ -68,6 +68,9 @@ a {
     bottom: 2.25rem !important;
 }
 
+.about-icon-size{
+    font-size: calc(var(--index) * 1.9);
+}
 @media (max-width: 3980px) {
     .menu_font_size {
         font-size: calc(var(--index) * .7);
