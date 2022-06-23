@@ -4,11 +4,10 @@
             <div class="card-body">
                 <ul class="row row-cols-3 nav nav-pills mb-3" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="pill" href="#danger-pills-home" role="tab" aria-selected="false">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#danger-pills-home" role="tab" aria-selected="false">
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
                                     <i class="fadeIn animated bx bx-export font-18 me-1"></i>
-                                    <!-- <i class="bx bx-home font-18 me-1"></i> -->
                                 </div>
                                 <div class="tab-title">Вывод</div>
                             </div>
@@ -19,18 +18,16 @@
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
                                     <i class="fadeIn animated bx bx-import font-18 me-1"></i>
-                                    <!-- <i class="bx bx-user-pin font-18 me-1"></i> -->
                                 </div>
                                 <div class="tab-title">Пополнить</div>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-bs-toggle="pill" href="#danger-pills-contact" role="tab" aria-selected="true">
+                        <a class="nav-link" data-bs-toggle="pill" href="#danger-pills-contact" role="tab" aria-selected="true">
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
-                                <i class="fadeIn animated bx bx-transfer-alt font-18 me-1"></i>
-                                    <!-- <i class="bx bx-microphone font-18 me-1"></i> -->
+                                    <i class="fadeIn animated bx bx-transfer-alt font-18 me-1"></i>
                                 </div>
                                 <div class="tab-title">Перевод</div>
                             </div>
@@ -38,14 +35,164 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="danger-pills-tabContent">
-                    <div class="tab-pane fade" id="danger-pills-home" role="tabpanel">
-                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi.</p>
+                    <div class="tab-pane fade active show" id="danger-pills-home" role="tabpanel">
+                        <form id="exportMoney">
+                            <div class="card-body p-2">
+                                <div class="card-title">
+                                    <h5 class="mb-5 mt-2 text-white">Баланс <span>43250</span> руб</h5>
+                                    <input type="hidden" name="balance" value="43250">
+                                </div>
+                                <hr>
+
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-3">
+                                        <label for="exportCountMoney" class="form-label">Сумма вывода</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-ruble"></i></span>
+                                            <input type="number" class="form-control border-start-0" id="exportCountMoney" name="exportCountMoney" placeholder="Сумма">
+                                        </div>
+                                    </div>
+                                    <div class="col p-3">
+                                        <label for="cardNumber" class="form-label">Номер карты</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-credit-card"></i></span>
+                                            <input type="text" class="card_number form-control border-start-0" id="cardNumber" name="cardNumber" placeholder="Номер карты">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck3">Запомнить карту</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-light btn-lg px-5">Вывести</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-12 text-center">
+
+                                </div>
+
+
+                            </div>
+                        </form>
                     </div>
                     <div class="tab-pane fade" id="danger-pills-profile" role="tabpanel">
-                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                        <form id="importMoney">
+                            <div class="card-body p-2">
+                                <hr>
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-3">
+                                        <label for="importCountMoney" class="form-label">Сумма пополнения</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-ruble"></i></span>
+                                            <input type="number" class="form-control border-start-0" id="importCountMoney" name="importCountMoney" placeholder="Сумма">
+                                        </div>
+                                    </div>
+                                    <div class="col p-3">
+                                        <label for="importСardNumber" class="form-label">Номер карты</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-credit-card"></i></span>
+                                            <input type="text" class="card_number form-control border-start-0" id="importСardNumber" name="importСardNumber" placeholder="Номер карты">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- данные держателя карты -->
+                                <div class="row row-cols-1 row-cols-lg-3">
+                                    <!-- name -->
+                                    <div class="col p-3">
+                                        <label for="importСardName" class="form-label">Имя держателя карты</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-user-circle"></i></span>
+                                            <input type="text" class="form-control border-start-0" id="importСardName" name="importСardName" placeholder="Ivanov Ivan">
+                                        </div>
+                                    </div>
+                                    <!-- date -->
+                                    <div class="col p-3">
+                                        <label for="impordCardDate" class="form-label">Скрок действия карты</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-revision"></i>
+                                            </span>
+                                            <input type="text" class="form-control border-start-0" id="impordCardDate" name="impordCardDate">
+                                        </div>
+                                    </div>
+                                    <!-- cvc -->
+                                    <div class="col p-3">
+                                        <label for="impordCardCvcCode" class="form-label">CVC код</label>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-barcode"></i>
+                                            </span>
+                                            <input type="password" class="form-control border-start-0" id="impordCardCvcCode" name="impordCardCvcCode" maxlength="3" minlength="3">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 p-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                        <label class="form-check-label" for="gridCheck3">Запомнить карту</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-light btn-lg px-5">Пополнить</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-12 text-center">
+
+                                </div>
+
+
+                            </div>
+                        </form>
                     </div>
-                    <div class="tab-pane fade active show" id="danger-pills-contact" role="tabpanel">
-                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                    <div class="tab-pane fade" id="danger-pills-contact" role="tabpanel">
+
+                        <form id="transferMoney">
+                            <div class="card-body p-2">
+                                <div class="card-title">
+                                    <h5 class="mb-5 mt-2 text-white">Баланс <span>43250</span> руб</h5>
+                                    <input type="hidden" name="balance" value="43250">
+                                </div>
+                                <hr>
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col p-3">
+                                        <label for="transferCountMoney" class="form-label">Сумма перевода</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-ruble"></i></span>
+                                            <input type="number" class="form-control border-start-0" id="transferCountMoney" name="transferCountMoney" placeholder="Сумма">
+                                        </div>
+                                    </div>
+                                    <div class="col p-3">
+                                        <label for="transferСardNumber" class="form-label">Номер карты получателя</label>
+                                        <div class="input-group input-group-lg"> <span class="input-group-text">
+                                                <i class="fadeIn animated bx bx-credit-card"></i></span>
+                                            <input type="text" class="card_number form-control border-start-0" id="transferСardNumber" name="transferСardNumber" placeholder="Номер карты">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 pt-3 pb-3">
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-light btn-lg px-5">Перевести</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-12 text-center">
+
+                                </div>
+
+
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

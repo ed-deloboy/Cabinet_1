@@ -22,6 +22,7 @@
 		});
 	</script> 
 	<script src="assets/js/index.js"></script>
+	<script src="assets/js/inputmask.min.js"></script>
 	<!--app JS-->
 	<script>
 		new PerfectScrollbar('.product-list');

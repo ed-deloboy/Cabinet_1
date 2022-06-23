@@ -165,7 +165,7 @@
 				<!-- item start -->
 				<li>
 					<a id="partner_page" class="nav_left_link">
-						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
+						<div class="parent-icon"><i class="lni lni-slideshare"></i>
 						</div>
 						<div class="menu-title">Партнёры</div>
 					</a>
@@ -175,7 +175,7 @@
 				<!-- item start -->
 				<li>
 					<a id="business_page" class="nav_left_link">
-						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
+						<div class="parent-icon"><i class="lni lni-diamond-alt"></i>
 						</div>
 						<div class="menu-title">Бизнес</div>
 					</a>
@@ -185,7 +185,7 @@
 				<!-- item start -->
 				<li>
 					<a id="faq_page" class="nav_left_link">
-						<div class="parent-icon"><i class="fadeIn animated bx bx-detail"></i>
+						<div class="parent-icon"><i class="bx bx-help-circle"></i>
 						</div>
 						<div class="menu-title">FAQ</div>
 					</a>

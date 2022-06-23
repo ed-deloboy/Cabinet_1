@@ -1,7 +1,5 @@
 // custom functions
 
-
-
 // top menu
 let top_nav_list = document.getElementById("menu_top");
 let top_nav_link = top_nav_list.querySelectorAll("a");
@@ -23,23 +21,23 @@ let partner_btn_left = document.getElementById("partner_page");
 let business_btn_left = document.getElementById("business_page");
 let faq_btn_left = document.getElementById("faq_page");
 
-// profle 
+// profle
 let rofile_btn = document.getElementById("profile_page");
 
-let partnerLink__link = document.getElementById('partnerLink__link');
-let partnerLink__text = document.getElementById('partnerLink__text').textContent;
+let partnerLink__link = document.getElementById("partnerLink__link");
+let partnerLink__text =
+  document.getElementById("partnerLink__text").textContent;
 let copyBtn = document.getElementById("linkCopyBtn");
-let editPasswordForm = document.getElementById('editPasswordForm');
-
+let editPasswordForm = document.getElementById("editPasswordForm");
 
 // notification func
 
-copyBtn.addEventListener('click', e => {
-  round_success_noti('Партнёрская ссылка скопирована');
+copyBtn.addEventListener("click", (e) => {
+  round_success_noti("Партнёрская ссылка скопирована");
   partnerLink__link.value = partnerLink__text;
   partnerLink__link.select();
   document.execCommand("copy");
-})
+});
 
 top_nav_link.forEach((e) => {
   e.addEventListener("click", (e) => {
@@ -85,7 +83,6 @@ left_nav_link.forEach((b) => {
     }
   });
 });
-
 
 // Главная страница, загрузка
 
@@ -158,6 +155,17 @@ finance_btn_top.addEventListener("click", (e) => {
       loader.classList.add("d-none");
       body_container.classList.remove("d-none");
       body_container.innerHTML = response;
+
+      // валидация даты карты
+      let cardDateInput = document.querySelectorAll("#impordCardDate");
+      let cardDateMask = new Inputmask("99/99");
+      cardDateMask.mask(cardDateInput);
+
+      // валидация суммы перевода
+
+      let card_number = document.querySelectorAll(".card_number");
+      let card_number_mask = new Inputmask("9999_9999_9999_9999");
+      card_number_mask.mask(card_number);
     },
   });
 });
@@ -178,7 +186,6 @@ marketing_btn_top.addEventListener("click", (e) => {
   });
 });
 
-
 // прослушка партнёры
 partner_btn_left.addEventListener("click", (e) => {
   body_container.classList.add("d-none");
@@ -194,7 +201,6 @@ partner_btn_left.addEventListener("click", (e) => {
     },
   });
 });
-
 
 // прослушка бизнес
 business_btn_left.addEventListener("click", (e) => {
@@ -228,7 +234,6 @@ faq_btn_left.addEventListener("click", (e) => {
   });
 });
 
-
 // прослушка профайл
 rofile_btn.addEventListener("click", (e) => {
   body_container.classList.add("d-none");
@@ -242,21 +247,18 @@ rofile_btn.addEventListener("click", (e) => {
       body_container.classList.remove("d-none");
       body_container.innerHTML = response;
 
-      let prof_update_btn = document.getElementById('profile_update_btn');
-      prof_update_btn.addEventListener('click', e => {
-        round_success_noti('Ваш профиль обновлен');
-
-      })
+      let prof_update_btn = document.getElementById("profile_update_btn");
+      prof_update_btn.addEventListener("click", (e) => {
+        round_success_noti("Ваш профиль обновлен");
+      });
     },
   });
 });
 
-
-
-// edit password 
-editPasswordForm.addEventListener('submit', e => {
+// edit password
+editPasswordForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  let data = $('#editPasswordForm').serializeArray();
+  let data = $("#editPasswordForm").serializeArray();
   console.log(data);
 
   $.ajax({
@@ -266,33 +268,33 @@ editPasswordForm.addEventListener('submit', e => {
     success: function (response) {
       console.log(response);
       if (response == 234) {
-        round_warning_noti('Все поля пустые')
+        round_warning_noti("Все поля пустые");
       }
 
       if (response == 34) {
-        round_warning_noti('Поля ввода нового пароля пустые')
+        round_warning_noti("Поля ввода нового пароля пустые");
       }
 
       if (response == 1) {
-        round_warning_noti('Новые пароли не совпадают, попробуйте еще раз')
+        round_warning_noti("Новые пароли не совпадают, попробуйте еще раз");
       }
 
       if (response == 2) {
-        round_warning_noti('Поле старого пароля пустое')
+        round_warning_noti("Поле старого пароля пустое");
       }
 
       if (response == 3) {
-        round_warning_noti('Поле нового пароля пустое')
+        round_warning_noti("Поле нового пароля пустое");
       }
 
       if (response == 4) {
-        round_warning_noti('Поле ввода повторного нового пароля пустое')
+        round_warning_noti("Поле ввода повторного нового пароля пустое");
       }
       if (response == 7) {
-        round_success_noti('Запрос на изменение пароля подтвержден, проверьте EMAIL')
+        round_success_noti(
+          "Запрос на изменение пароля подтвержден, проверьте EMAIL"
+        );
       }
-    }
+    },
   });
-
-
-})
+});
