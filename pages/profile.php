@@ -8,10 +8,10 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" alt="Admin" class="rounded-circle p-1 bg-primary" width="110" height="110" style="object-fit: cover;">
+                                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FE42/production/_103609056_049596185-1.jpg" alt="Admin" class="rounded-circle p-1 bg-primary" width="110" height="110" style="object-fit: cover;">
 
                                 <div class="mt-3">
-                                    <h4>Эд Бондаренко</h4>
+                                    <h4>Илон Маск</h4>
                                     <p class="mb-1">Gold</p>
 
                                     <div class="d-flex pt-2 pb-2">
@@ -45,7 +45,7 @@
                                         <i class="fadeIn animated bx bx-mail-send"></i>
                                         Email
                                     </p>
-                                    <span class="text-white">bondarenko@mail.ru</span>
+                                    <span class="text-white">tesla@mail.ru</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <p class="mb-0 list-inline-item">
@@ -70,7 +70,7 @@
                                     <p class="mb-0">Login</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="bondarenko">
+                                    <input type="text" class="form-control" value="ilonmask1983">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -78,7 +78,7 @@
                                     <p class="mb-0">Фамилия</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="Бондаренко">
+                                    <input type="text" class="form-control" value="Маск">
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -86,7 +86,7 @@
                                     <p class="mb-0">Имя</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" value="Эд">
+                                    <input type="text" class="form-control" value="Илон">
                                 </div>
                             </div>
                             <div class="row mb-3">

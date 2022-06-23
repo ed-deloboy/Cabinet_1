@@ -559,7 +559,7 @@
 					<div class="user-box dropdown">
 						<a class="d-flex align-items-center nav-link dropdown-toggle
 								dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="https://sun9-67.userapi.com/impf/qatvzD9xwO2QXfCDccOOO5tpAUgrqwv7Dz29ng/kfcGaFI_2Us.jpg?size=1280x960&quality=96&sign=62ee0c5adce758c716a8c78d1cfcbfdb&type=album" class="user-img" alt="user avatar" style="object-fit:cover;">
+							<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FE42/production/_103609056_049596185-1.jpg" class="user-img" alt="user avatar" style="object-fit:cover;">
 							<div class="user-info ps-3">
 								<p class="user-name mb-0">Бондаренко Эд</p>
 								<p class="designattion mb-0">Gold</p>
