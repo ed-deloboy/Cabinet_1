@@ -123,6 +123,32 @@ vebinar_btn_top.addEventListener("click", (e) => {
       loader.classList.add("d-none");
       body_container.classList.remove("d-none");
       body_container.innerHTML = response;
+
+      // запуск слайдера
+      let vebinarsPageSlider = new Swiper(".vebinars-slider-container", {
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2.3,
+            spaceBetween: 20,
+          }
+        },
+      });
     },
   });
 });

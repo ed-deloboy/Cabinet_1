@@ -30,12 +30,9 @@
 	<!-- <link rel="stylesheet" href="assets/css/dark-theme.css" /> -->
 	<!-- <link rel="stylesheet" href="assets/css/semi-dark.css" /> -->
 	<!-- <link rel="stylesheet" href="assets/css/header-colors.css" /> -->
+	<!-- custom -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="assets/css/my_app.css">
-
-	<!-- jQ -->
-	<script defer src="assets/js/my_app.js"></script>
-
-	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<title>Проект</title>
 

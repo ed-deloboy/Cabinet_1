@@ -2,9 +2,13 @@
     <section class="header_finance">
         <div class="card">
             <div class="card-body">
+                <div class="card-title">
+                    <h5 class="mb-3 text-white p-2 bg-light rounded d-inline-block">Баланс: <span>43250</span> <i class="fadeIn animated bx bx-ruble"></i></h5>
+                    <input type="hidden" name="balance" value="43250">
+                </div>
                 <ul class="row row-cols-3 nav nav-pills mb-3" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-bs-toggle="pill" href="#danger-pills-home" role="tab" aria-selected="false">
+                        <a class="nav-link border rounded active" data-bs-toggle="pill" href="#danger-pills-home" role="tab" aria-selected="false">
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
                                     <i class="fadeIn animated bx bx-export font-18 me-1"></i>
@@ -14,7 +18,7 @@
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="pill" href="#danger-pills-profile" role="tab" aria-selected="false">
+                        <a class="nav-link border rounded" data-bs-toggle="pill" href="#danger-pills-profile" role="tab" aria-selected="false">
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
                                     <i class="fadeIn animated bx bx-import font-18 me-1"></i>
@@ -24,7 +28,7 @@
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="pill" href="#danger-pills-contact" role="tab" aria-selected="true">
+                        <a class="nav-link border rounded" data-bs-toggle="pill" href="#danger-pills-contact" role="tab" aria-selected="true">
                             <div class="d-flex align-items-center justify-content-center">
                                 <div class="tab-icon">
                                     <i class="fadeIn animated bx bx-transfer-alt font-18 me-1"></i>
@@ -35,13 +39,10 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="danger-pills-tabContent">
+                    <!-- export -->
                     <div class="tab-pane fade active show" id="danger-pills-home" role="tabpanel">
                         <form id="exportMoney">
                             <div class="card-body p-2">
-                                <div class="card-title">
-                                    <h5 class="mb-5 mt-2 text-white">Баланс <span>43250</span> руб</h5>
-                                    <input type="hidden" name="balance" value="43250">
-                                </div>
                                 <hr>
 
                                 <div class="row row-cols-1 row-cols-lg-2">
@@ -81,6 +82,7 @@
                             </div>
                         </form>
                     </div>
+                    <!-- import -->
                     <div class="tab-pane fade" id="danger-pills-profile" role="tabpanel">
                         <form id="importMoney">
                             <div class="card-body p-2">
@@ -154,14 +156,11 @@
                             </div>
                         </form>
                     </div>
+                    <!-- transfer -->
                     <div class="tab-pane fade" id="danger-pills-contact" role="tabpanel">
 
                         <form id="transferMoney">
                             <div class="card-body p-2">
-                                <div class="card-title">
-                                    <h5 class="mb-5 mt-2 text-white">Баланс <span>43250</span> руб</h5>
-                                    <input type="hidden" name="balance" value="43250">
-                                </div>
                                 <hr>
                                 <div class="row row-cols-1 row-cols-lg-2">
                                     <div class="col p-3">
@@ -194,6 +193,52 @@
                             </div>
                         </form>
                     </div>
+                </div>
+
+                <div class="card-body">
+                    <table class="table mb-0 table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Номер операции</th>
+                                <th scope="col">Тип операции</th>
+                                <th scope="col">Статус</th>
+                                <th scope="col">Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5678</td>
+                                <td>Вывод</td>
+                                <td>Обработка</td>
+                                <td>73200 <i class="fadeIn animated bx bx-ruble"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4785</td>
+                                <td>Перевод</td>
+                                <td>Обработка</td>
+                                <td>3000 <i class="fadeIn animated bx bx-ruble"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4567</td>
+                                <td>Вывод</td>
+                                <td>Выполнено</td>
+                                <td>56700 <i class="fadeIn animated bx bx-ruble"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3457</td>
+                                <td>Вывод</td>
+                                <td>Выполнено</td>
+                                <td>23987 <i class="fadeIn animated bx bx-ruble"></i></td>
+                            </tr>
+
+                            <tr>
+                                <td>3257</td>
+                                <td>Пополнение</td>
+                                <td>Выполнено</td>
+                                <td>7990 <i class="fadeIn animated bx bx-ruble"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

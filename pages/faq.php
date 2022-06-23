@@ -1,10 +1,10 @@
 <section class="faq-page row">
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- content -->
 
         <div class="row">
-            <div class="col-12 col-lg-9 mx-auto">
+            <div class="col-12 mx-auto">
                 <div class="text-center">
                     <h5 class="mb-0 text-uppercase">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h5>
                     <hr>
