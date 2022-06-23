@@ -40,65 +40,107 @@
             <div class="swiper vebinars-slider-container">
                 <ul class="swiper-wrapper" style="margin-left: -25px;">
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://m.seonews.ru/upload/medialibrary/4dd/4dda0e488c3320ce70300e2ac5ad2b0f.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.gyazo.com/41c5f4c224e220ad40c81b312bb98a20.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://i.gyazo.com/41c5f4c224e220ad40c81b312bb98a20.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://www.osinniki.org/uploads/posts/2020-07/1595922090_img_20200728_143603_349.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://st2.depositphotos.com/1001877/7655/i/600/depositphotos_76554095-stock-photo-webinar-concept-desk-and-chalkboard.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://www.osinniki.org/uploads/posts/2020-07/1595922090_img_20200728_143603_349.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://exkavator.ru/fcpics/images/jpg_5e9ea4f9311ae.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://www.navien.ru/upload/wysiwyg/company/webinar-navien.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://m.seonews.ru/upload/medialibrary/4dd/4dda0e488c3320ce70300e2ac5ad2b0f.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://trueconf.ru/images/webinars/webinar-439-ru_new.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://i.gyazo.com/41c5f4c224e220ad40c81b312bb98a20.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOhpc3oW08Y165WutxRgNWZwyIp97fwDEB7Q&usqp=CAU" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="swiper-slide">
-                        <div class="card">
-                            <img src="https://i.gyazo.com/41c5f4c224e220ad40c81b312bb98a20.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Тема вебинара</h5>
-                                <p class="card-text">Описание темы вебинара.</p> <a href="javascript:;" class="btn btn-light">Смотреть</a>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.gyazo.com/41c5f4c224e220ad40c81b312bb98a20.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название вебинара</h5>
+                                    <p class="card-text">Описание вебинара.</p>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="#" class="card-link p-1 rounded bg-light">Смотреть онлайн</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -114,7 +156,7 @@
             <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="card">
-                        <h2 class="font-weight-light text-white p-2">Предстоящие вебинары</h2>
+                        <h2 class="font-weight-light text-white p-2">Расписание предстоящих вебинаров</h2>
                         <p class="p-2">Подпишитесь на уведомление о предстоящих вебинарах, чтобы не потерять</p>
                         <div class="card-body">
                             <!-- Timeline start -->

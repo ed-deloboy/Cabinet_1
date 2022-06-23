@@ -100,10 +100,17 @@ input::-webkit-inner-spin-button {
     font-size: calc(var(--index) * 1.9);
 }
 
-.swiper-slide .card img {
-    width: 100%;
-    height: 260px;
+.swiper-slide{
+    text-align: left !important;
 }
+
+.swiper-slide .card img {
+    filter: brightness(.9);
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+}
+
 
 .vebi-btn__next, 
 .vebi-btn__prev {

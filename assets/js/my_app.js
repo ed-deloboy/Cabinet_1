@@ -145,7 +145,7 @@ vebinar_btn_top.addEventListener("click", (e) => {
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 3.3,
+            slidesPerView: 2.3,
             spaceBetween: 10,
           }
         },
