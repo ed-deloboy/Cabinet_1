@@ -126,6 +126,7 @@ vebinar_btn_top.addEventListener("click", (e) => {
 
       // запуск слайдера
       let vebinarsPageSlider = new Swiper(".vebinars-slider-container", {
+        spaceBetween: 10,
         loop: false,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -144,8 +145,8 @@ vebinar_btn_top.addEventListener("click", (e) => {
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.3,
-            spaceBetween: 20,
+            slidesPerView: 3.3,
+            spaceBetween: 10,
           }
         },
       });

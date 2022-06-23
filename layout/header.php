@@ -32,6 +32,8 @@
 	<!-- <link rel="stylesheet" href="assets/css/header-colors.css" /> -->
 	<!-- custom -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="assets/css/my_app.css">
 
 	<title>Проект</title>
