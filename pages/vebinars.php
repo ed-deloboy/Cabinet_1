@@ -160,8 +160,9 @@
                         <p class="p-2">Подпишитесь на уведомление о предстоящих вебинарах, чтобы не потерять</p>
                         <div class="card-body">
                             <!-- Timeline start -->
-                            <div class="timeline">
-                                <div class="timeline-row">
+                            <ul class="timeline">
+                                <!-- timeline item -->
+                                <li class="timeline-row">
                                     <div class="timeline-time text-light">
                                         20:00<small>25.07.2022</small>
                                     </div>
@@ -174,8 +175,8 @@
                                             <a href="#" class="btn bg-light text-light">Подписаться на уведомление</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="timeline-row">
+                                </li>
+                                <li class="timeline-row">
                                     <div class="timeline-time text-light">
                                         20:00<small>25.07.2022</small>
                                     </div>
@@ -188,8 +189,8 @@
                                             <a href="#" class="btn bg-light text-light">Подписаться на уведомление</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                             <!-- Timeline end -->
                         </div>
                     </div>

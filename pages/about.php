@@ -1,6 +1,6 @@
 <div class="about-page row">
     <div class="container">
-        <section class="row flex-lg-row-reverse align-items-center g-5 py-5 pb-3">
+        <section class="row flex-lg-row-reverse align-items-center pb-3">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="https://bootstrap-4.ru/docs/5.2/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
