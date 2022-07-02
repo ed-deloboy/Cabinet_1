@@ -560,7 +560,7 @@
 								dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FE42/production/_103609056_049596185-1.jpg" class="user-img" alt="user avatar" style="object-fit:cover;">
 							<div class="user-info ps-3">
-								<p class="user-name mb-0">Бондаренко Эд</p>
+								<p class="user-name mb-0">Илон Маск</p>
 								<p class="designattion mb-0">Gold</p>
 							</div>
 						</a>
