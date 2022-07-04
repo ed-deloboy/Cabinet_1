@@ -151,6 +151,14 @@
 
 			<!--navigation left-->
 			<ul class="metismenu" id="menu_left">
+			<li>
+					<a id="profile_page" class="nav_left_link">
+						<div class="parent-icon">
+						<i class="bx bx-user"></i>
+						</div>
+						<div class="menu-title">Профиль</div>
+					</a>
+				</li>
 
 				<li>
 					<a id="finance_page" class="nav_left_link">
@@ -161,6 +169,7 @@
 					</a>
 				</li>
 
+				
 				<!-- item start -->
 				<li>
 					<a id="partner_page" class="nav_left_link">
