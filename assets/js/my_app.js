@@ -11,8 +11,9 @@ let loader = document.querySelector(".card-body");
 // top nav btn
 let general_btn_top = document.getElementById("nav_general");
 let vebinar_btn_top = document.getElementById("nav_vebinars");
-let about_btn_top = document.getElementById("nav_about");
 let marketing_btn_top = document.getElementById("nav_marketing");
+let about_btn_top = document.getElementById("nav_about");
+let promo_btn_top = document.getElementById("nav_promo");
 
 // left menu btn
 
@@ -161,6 +162,22 @@ about_btn_top.addEventListener("click", (e) => {
   $.ajax({
     type: "GET",
     url: "pages/about.php",
+    dataType: "html",
+    success: function (response) {
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
+    },
+  });
+});
+
+// прослушка о promo
+promo_btn_top.addEventListener("click", (e) => {
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
+  $.ajax({
+    type: "GET",
+    url: "pages/promo.php",
     dataType: "html",
     success: function (response) {
       loader.classList.add("d-none");

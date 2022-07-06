@@ -227,6 +227,10 @@
 								<a id="nav_about" href="#" class="nav-link menu_font_size"><i class="bx bx-user me-1"></i>О нас</a>
 							</li>
 
+							<li class="nav-item">
+								<a id="nav_promo" href="#" class="nav-link menu_font_size"><i class="bx bx-user me-1"></i>Промо материалы</a>
+							</li>
+
 						</ul>
 						<span class="position-absolute top-50 search-close translate-middle-y"><i class="bx bx-x"></i></span>
 
