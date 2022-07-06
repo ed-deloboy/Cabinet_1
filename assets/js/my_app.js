@@ -14,12 +14,13 @@ let vebinar_btn_top = document.getElementById("nav_vebinars");
 let marketing_btn_top = document.getElementById("nav_marketing");
 let about_btn_top = document.getElementById("nav_about");
 let promo_btn_top = document.getElementById("nav_promo");
+let finance_btn_top = document.getElementById("finance_page");
 
 // left menu btn
 
-let finance_btn_top = document.getElementById("finance_page");
 let partner_btn_left = document.getElementById("partner_page");
 let business_btn_left = document.getElementById("business_page");
+let contest_btn_left = document.getElementById("contest_page");
 let faq_btn_left = document.getElementById("faq_page");
 
 // profle
@@ -253,6 +254,22 @@ business_btn_left.addEventListener("click", (e) => {
   $.ajax({
     type: "GET",
     url: "pages/business.php",
+    dataType: "html",
+    success: function (response) {
+      loader.classList.add("d-none");
+      body_container.classList.remove("d-none");
+      body_container.innerHTML = response;
+    },
+  });
+});
+
+// прослушка конкурс
+contest_btn_left.addEventListener("click", (e) => {
+  body_container.classList.add("d-none");
+  loader.classList.remove("d-none");
+  $.ajax({
+    type: "GET",
+    url: "pages/contest.php",
     dataType: "html",
     success: function (response) {
       loader.classList.add("d-none");

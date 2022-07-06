@@ -98,7 +98,7 @@
 		}
 
 		.carousel-inner {
-			height: 300px !important;
+			height: 460px !important;
 		}
 
 		.carousel-item {
@@ -151,10 +151,10 @@
 
 			<!--navigation left-->
 			<ul class="metismenu" id="menu_left">
-			<li>
+				<li>
 					<a id="profile_page" class="nav_left_link">
 						<div class="parent-icon">
-						<i class="bx bx-user"></i>
+							<i class="bx bx-user"></i>
 						</div>
 						<div class="menu-title">Профиль</div>
 					</a>
@@ -169,13 +169,23 @@
 					</a>
 				</li>
 
-				
+
 				<!-- item start -->
 				<li>
 					<a id="partner_page" class="nav_left_link">
 						<div class="parent-icon"><i class="lni lni-slideshare"></i>
 						</div>
 						<div class="menu-title">Партнёры</div>
+					</a>
+				</li>
+				<!-- item stop -->
+
+				<!-- item start -->
+				<li>
+					<a id="contest_page" class="nav_left_link">
+						<div class="parent-icon"><i class="fadeIn animated bx bx-gift"></i>
+						</div>
+						<div class="menu-title">Конкурсы</div>
 					</a>
 				</li>
 				<!-- item stop -->
@@ -228,7 +238,7 @@
 							</li>
 
 							<li class="nav-item">
-								<a id="nav_promo" href="#" class="nav-link menu_font_size"><i class="bx bx-user me-1"></i>Промо материалы</a>
+								<a id="nav_promo" href="#" class="nav-link menu_font_size"><i class="lni lni-inbox me-1"></i>Промо материалы</a>
 							</li>
 
 						</ul>
@@ -631,3 +641,4 @@
 		<script defer src="assets/plugins/notifications/js/lobibox.min.js"></script>
 		<script defer src="assets/plugins/notifications/js/notifications.min.js"></script>
 		<script defer src="assets/plugins/notifications/js/notification-custom-script.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
